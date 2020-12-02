@@ -113,7 +113,7 @@ public class MessageServerImpl extends UnicastRemoteObject implements MessageSer
 	 * On catch les potentielles erreurs
 	 */
 	public static void main(String args[]) {
-		System.setProperty("java.rmi.server.hostname", "192.168.1.20");
+		System.setProperty("java.rmi.server.hostname", "localhost");
 		try {
 			LocateRegistry.createRegistry(1099);
 			
